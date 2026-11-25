@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
 
-function ServiceCard({ service }) {
+function ServiceCard({ id, name, description, price }) {
   return (
-    <Link to={`/services/${service.id}`} className="service-card">
-      <span>0{service.id}</span>
+    <Link to={`/services/${id}`} className="service-card">
+      <span>0{id}</span>
 
       <div>
-        <h2>{service.name}</h2>
-        <p>{service.description}</p>
+        <h2>{name}</h2>
+        <p>{description}</p>
       </div>
 
-      <span>VIEW --- </span>
+      <span>{price} ↗</span>
     </Link>
   );
 }
