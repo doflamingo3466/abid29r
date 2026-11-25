@@ -10,7 +10,7 @@ function ServiceCard({ id, name, description, price }) {
         <p>{description}</p>
       </div>
 
-      <span>{price} ↗</span>
+      <span>{price} ---</span>
     </Link>
   );
 }
